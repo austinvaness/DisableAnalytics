@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableAnalytics", "DisableAnalytics\DisableAnalytics.csproj", "{B8741141-8D5D-462E-9FA2-227E5D070835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8741141-8D5D-462E-9FA2-227E5D070835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8741141-8D5D-462E-9FA2-227E5D070835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8741141-8D5D-462E-9FA2-227E5D070835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8741141-8D5D-462E-9FA2-227E5D070835}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D17CA2B7-02B8-4E97-BE5C-9314E7582A3B}
+	EndGlobalSection
+EndGlobal

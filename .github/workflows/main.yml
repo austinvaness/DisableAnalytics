@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+name: Build and Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "windows-latest"
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup msbuild
+        uses: microsoft/setup-msbuild@v1.1
+      - name: Build
+        run: msbuild DisableAnalytics\DisableAnalytics.csproj -t:rebuild -verbosity:diag -property:Configuration=Release -property:BuildProjectReferences=false -property:PreBuildEvent= -property:PostBuildEvent=
+      - name: Show result
+        run: dir /a-D /S /B
